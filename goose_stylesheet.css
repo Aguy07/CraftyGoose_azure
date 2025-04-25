@@ -1,0 +1,938 @@
+@charset "UTF-8";
+
+html {
+    box-sizing: border-box;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#4264A2;
+    background-color: #faf2e4;
+    text-align: center;
+    margin: 0 auto; /* add this to override the default margin in the browser- gets rid of gap */
+    max-width: 1200px;
+}
+
+
+h1 {
+    color: #A74E2E;
+    text-align: center;
+    font-family:cursive;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d1633c;
+    margin-top: 30px;
+    text-shadow: .04em .04em .01em #8d4328;
+}
+h2 {
+    color: #A74E2E;
+    text-align: center;
+    font-size: 1.5em;
+    font-family:cursive;
+}
+h3 {
+    color: #A74E2E;
+    text-align: center;
+    font-size: 1em;
+}
+p {
+    color: #A74E2E;
+    text-align: center;
+    font-size: medium;
+    font-family: cursive;
+}
+
+img{
+    max-width: 100%;
+}
+
+#fact1, #fact2, #fact3 {
+    border: 2px solid #e4ab42;
+    padding: 5px 20px;
+    margin: 50px 50px;
+    background-color: rgba(255, 246, 233, 0.6);
+}
+
+
+#Events {
+    border: 2px solid #e4ab42;
+    padding: 5px 20px;
+    margin: 50px 50px;
+    background-color: rgba(255, 246, 233, 0.6);
+}
+
+
+#welcome {
+    border: 2px solid #e4ab42;
+    padding: 5px 20px;
+    margin: 50px 50px;
+    background-color: #fce3c099;
+}
+
+
+
+dt {
+    font-style: italic;
+    color: #8b0000;
+    font-size: larger;
+}
+
+
+dd {
+    font-style: italic;
+    font-size: larger;
+}
+
+
+ p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+/*-------BUTTON-----*/
+
+.button {
+    background-color: #e9967a;
+    /*Green*/
+    border:#d1633c;
+    color: #ffffff;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    margin:4px 2px;
+    Cursor: pointer;
+    border-radius: 5px;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color:#e9967a;
+    }
+    li {
+      float: left;
+    }
+    li a {
+      display: block;
+      color: #8b0000;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    li a:hover {
+      background-color: #d1633c;
+    }
+
+/*------PRODUCT CARDS------*/
+/*
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+    }
+    
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+    
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+    
+    .card button:hover {
+      opacity: 0.7;
+    }
+*/
+
+/*-------------------------HERO IMAGE----------------------*/
+
+#hero_image{
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    
+}
+.hero_header {
+    text-align: center;
+    position: absolute;
+    color: #B55A3C;
+    top: 25%;
+    font-size: 3em;
+    margin: 20px;
+}
+
+/*---------------------------NAV BAR-----------------------*/
+
+.main_nav{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    background:darksalmon;
+    padding: .3px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+  
+.main_nav a{
+    text-decoration: none;
+    font-size: large;
+    color: #faf2e4;
+    text-shadow: .05em .05em .1em grey;
+    padding: 60px 40px;
+    margin: 0 40px;
+}
+
+.main_nav a:hover {
+    background-color: #f0f8ff;
+    color: darkred;
+}
+  
+#logo{
+    width: 200px;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    justify-content: center;
+    position: absolute;
+}
+
+/*----------TABLE-------*/
+
+.socials {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid;
+    padding: 5px 20px;
+    background-color: rgb(252, 233, 207);
+    text-align: center;
+    font-size: larger;
+}
+
+
+
+/*-----CONTACT FORM-----*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #e4ab42; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #B55A3C;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: darkred;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .form {
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    padding: 20px;
+  }
+
+  /*---------DIVIDERS-------*/
+  hr.solid {
+    border-top: 3px solid #c6a9dd;
+  }
+
+  /*-------------------------FOOTER-----------------------*/
+  footer {
+    background-color: #e9967a;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  footer p {
+    color: darkred;
+  }
+
+
+  /*--------------IMAGE GALLERY--------------*/
+
+  #best {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #img p{
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+  }
+
+  #best img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+  }
+
+  #best img:hover{
+    transform: scale(1.05);
+  }
+
+
+  /*-----------------------GRID - HOME---------------------*/
+  
+  .index_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: 
+        'welcome  welcome  welcome'
+        'about  about  about'
+        'learn learn learn'
+        'product product product'
+        'best best best'
+        'fact1 fact2 fact3'
+        'review  review  review';
+        justify-content: center;
+        background-color: rgb(255, 246, 233);
+        margin: 0 auto;
+  }
+ 
+  #welcome{
+    grid-area: welcome;
+    object-fit: cover;
+  }
+
+  #learn{
+    grid-area: learn;
+    object-fit: cover;
+  }
+
+  #product{
+    grid-area: product;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #best{
+    grid-area: best;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #fact1{
+    grid-area: fact1;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #fact2{
+    grid-area: fact2;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #fact3{
+    grid-area: fact3;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #review{
+    grid-area: review;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  /*------------ CONTAINER STYLE AND SPACING----------*/
+
+  #welcome{
+    margin: 40px 300px;
+  }
+
+  #fact1, #fact2, #fact3{
+    margin: 30px 20px;
+  }
+
+  #learn{
+    margin: 20px 30px;
+  }
+
+  #about p{
+    margin: 20px 30px;
+  }
+
+  #product1, #product2, #product3{
+    margin: 30px 20px;
+  }
+
+/*--------------------- ABOUT - GRID ----------------------*/
+
+#about_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        'about about about'
+        'promise promise promise'
+        'value value value'
+        'button button button';
+        justify-content: center;
+        background-color: rgb(255, 246, 233);
+        margin: 0 auto;
+  }
+
+  #about {
+    grid-area: about;
+    object-fit: cover;
+    justify-content: center;
+    
+  }
+
+  #promise {
+    grid-area: promise;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #value {
+    grid-area: value;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  .button {
+    grid-area: button;
+    object-fit: cover;
+    text-align: center;
+  }
+
+/*------------ABOUT CONTAINER STYLE AND SPACING----------*/
+
+#about{
+  margin: 40px 300px;
+  padding: 5px 20px;
+  background-image: url(images/paper2.jpg)
+}
+
+#about p{
+  text-align: left;
+  color: #8b0000;
+  font-size: x-large;
+}
+
+
+#promise{
+  margin: 30px 20px;
+  background-color:rgb(252, 233, 207);
+}
+
+#value{
+  margin: 20px 30px;
+  background-color:rgb(252, 233, 207);
+
+}
+
+  /*--------------------- PRODUCT - GRID ----------------*/
+ 
+  #product_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+        'collections collections collections'
+        'collection1  collection2  collection3'
+        'individual individual individual'
+        'single1 single2 single3'
+        'single4 single5 single6'
+        'single7 single8 single9'
+        'review  review  review'
+        'button button button';
+        background-color: rgb(255, 246, 233);
+  }
+
+  #collections {
+    grid-area: collections;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #collection1{
+    grid-area: collection1;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #collection2{
+    grid-area: collection2;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #collection3{
+    grid-area: collection3;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #individual {
+    grid-area: individual;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #single1{
+    grid-area: single1;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #single2{
+    grid-area: single2;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #single3{
+    grid-area: single3;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #single4{
+    grid-area: single4;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #single5{
+    grid-area: single5;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #single6{
+    grid-area: single6;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #single7{
+    grid-area: single7;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #single8{
+    grid-area: single8;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #single9{
+    grid-area: single9;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  #review{
+    grid-area: review;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  .button {
+    grid-area: button;
+    object-fit: cover;
+    text-align: center;
+  }
+  
+/*------------PRODUCT CONTAINER STYLE AND SPACING----------*/
+
+#collections{
+  margin: 20px 30px;
+  background-color:rgb(252, 233, 207);
+}
+
+#collection1, #collection2, #collection3{
+  margin: 30px 20px;
+}
+
+#individual{
+  margin: 20px 30px;
+  background-color:rgb(252, 233, 207);
+}
+
+#single1, #single2, #single3, #single4 #single5, #single6, #single7, #single8, #single9{
+  margin: 30px 20px;
+  
+}
+
+#collection1:hover{
+  transform: scale(1.05);
+}
+
+#collection2:hover{
+  transform: scale(1.05);
+}
+
+#collection3:hover{
+  transform: scale(1.05);
+}
+
+#single1:hover{
+  transform: scale(1.05);
+}
+
+#single2:hover{
+  transform: scale(1.05);
+}
+
+#single3:hover{
+  transform: scale(1.05);
+}
+
+#single4:hover{
+  transform: scale(1.05);
+}
+
+#single5:hover{
+  transform: scale(1.05);
+}
+
+#single6:hover{
+  transform: scale(1.05);
+}
+
+#single7:hover{
+  transform: scale(1.05);
+}
+
+#single8:hover {
+  transform: scale(1.05);
+}
+
+#single9:hover {
+  transform: scale(1.05);
+}
+
+
+/*----------------------------- REVIEW ---------------------*/
+.testimonial {
+  border: 2px solid #e9967a ;
+  background-color: rgb(252, 233, 207);
+  border-radius: 2px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+
+/*--------------------- CONTACT - GRID ----------------------*/
+
+#contact_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas:
+      'question question question'
+      'socials socials socials'
+      'contact contact contact'
+      'form form form'
+      'faq faq faq'
+      'button button button';
+      background-color: rgb(255, 246, 233);
+}
+
+#question {
+  grid-area: question;
+  object-fit: cover;
+  text-align: center;
+}
+
+.socials{
+  grid-area: socials;
+  object-fit: cover;
+  text-align: center;
+}
+
+#contact{
+  grid-area: contact;
+  object-fit: cover;
+  text-align: center;
+}
+
+.form {
+  grid-area: form;
+  object-fit: cover;
+  text-align: center;
+}
+
+#faq{
+  grid-area: faq;
+  object-fit: cover;
+  text-align: center;
+}
+
+.button {
+  grid-area: button;
+  object-fit: cover;
+  text-align: center;
+}
+
+/*------------CONTACT CONTAINER STYLE AND SPACING----------*/
+
+#question{
+  margin: 40px 300px;
+}
+
+.socials{
+  margin: 30px 20px;
+}
+
+#contact{
+  margin: 20px 30px;
+}
+
+.form {
+  margin: 20px 30px;
+}
+
+#faq{
+  margin: 30px 20px;
+}
+
+/*----------------- MEDIA QUERIES---------*/
+
+/*-----home-----*/
+
+@media screen and (max-width: 800px) {
+  .index_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8,auto);
+    grid-template-areas: 
+        'welcome   welcome'
+        'about   about'
+        'behind  behind'
+        'learn  learn'
+        'product  product'
+        'best best best'
+        'fact1  fact2'
+        'fact3  fact3'
+        'review  review';
+        justify-content: center;
+        background-color: rgb(255, 246, 233);
+        margin: 0 auto;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .index_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12,auto);
+    grid-template-areas: 
+        'welcome'
+        'about'
+        'behind'
+        'learn'
+        'product'
+        'best'
+        'fact1'
+        'fact2'
+        'fact3'
+        'review';
+        justify-content: center;
+        background-color: rgb(255, 246, 233);
+        margin: 0 auto;
+  }
+  
+}
+
+/*----about----*/
+@media screen and (max-width: 800px) {
+  #about_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8,auto);
+    grid-template-areas:
+        'about about'
+        'promise promise'
+        'value value'
+        'button button';
+        justify-content: center;
+        background-color: rgb(255, 246, 233);
+        margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #about_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas:
+        'about'
+        'promise'
+        'value'
+        'button';
+        justify-content: center;
+        background-color: rgb(255, 246, 233);
+        margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #product_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(12, auto);
+    grid-template-areas:
+        'collections collections'
+        'collection1  collection2'
+        'collection3 collection3'
+        'individual individual'
+        'single1 single2'
+        'single3 single3'
+        'single4 single5'
+        'single6 single6'
+        'single7 single8'
+        'single9 single9'
+        'review  review'
+        'button button';
+        justify-content: center;
+        background-color: rgb(255, 246, 233);
+        margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #product_grid {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(16, auto);
+    grid-template-areas:
+        'collections'
+        'collection1'
+        'collection2'
+        'collection3'
+        'individual'
+        'single1'
+        'single2'
+        'single3'
+        'single4'
+        'single5'
+        'single6'
+        'single7'
+        'single8'
+        'single9'
+        'review'
+        'button';
+        justify-content: center;
+        background-color: rgb(255, 246, 233);
+        margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #contact_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        'question question'
+        'socials socials'
+        'contact contact'
+        'form form'
+        'faq faq'
+        'button button';
+        justify-content: center;
+        background-color: rgb(255, 246, 233);
+        margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        'question'
+        'socials'
+        'contact'
+        'form'
+        'faq'
+        'button';
+        justify-content: center;
+        background-color: rgb(255, 246, 233);
+        margin: 0 auto;
+  }
+}
+
+/*body {
+    
+  }
+*/
